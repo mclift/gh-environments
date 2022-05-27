@@ -14,7 +14,6 @@ jobs:
       - name: deploy
         run: echo Deploy to DEV
 
-jobs:
   deploy-to-uat:
     needs: deploy-to-dev
     runs-on: ubuntu-latest
@@ -23,7 +22,6 @@ jobs:
       - name: deploy
         run: echo Deploy to UAT
 
-jobs:
   deploy-to-prod:
     needs: deploy-to-uat
     runs-on: ubuntu-latest
